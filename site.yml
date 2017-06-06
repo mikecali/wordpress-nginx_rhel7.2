@@ -7,7 +7,7 @@
 
   roles:
     - common
-    - { mariadb: when: ansible_hostname=client2 } 
+    - { mariadb when: ansible_hostname=client2 } 
     - nginx
     - php-fpm
     - wordpress
